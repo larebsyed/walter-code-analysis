@@ -1,33 +1,4 @@
 * Walter-AIDirector Analysis
-** Lines of Code Analysis
-1343 text files.
-    1310 unique files.
-     114 files ignored.
-| Language        | files |   code | blank | comment |
-|-----------------+-------+--------+-------+---------|
-| C/C++Header      |    17 |  52997 |  8722 |    9285 |
-| TypeScript      |   648 |  40387 |  4261 |    1041 |
-| JSON            |    60 |  12973 |    24 |       0 |
-| Python          |   157 |  11822 |  2933 |    2180 |
-| YAML            |     9 |   4713 |    21 |      32 |
-| HTML            |    23 |   3004 |    91 |      38 |
-| JavaScript      |    25 |   2939 |   290 |     168 |
-| SQL             |   204 |   1640 |   406 |      68 |
-| XML             |    10 |   1050 |     0 |       0 |
-| C++              |     8 |    619 |    88 |      84 |
-| JupyterNotebook |     3 |    519 |     0 |    2716 |
-| Markdown        |    20 |    365 |   160 |       0 |
-| BourneShell     |    17 |    330 |    74 |      42 |
-| make            |    11 |    198 |    67 |       2 |
-| CSS             |     4 |    172 |    27 |       0 |
-| Dockerfile      |    11 |    128 |    65 |      15 |
-| SVG             |     9 |    103 |     0 |       3 |
-| TOML            |     1 |      9 |     1 |       6 |
-| GraphQL         |     1 |      0 |     2 |       0 |
-|-----------------+-------+--------+-------+---------|
-| SUM:            |  1238 | 133968 | 17232 |   15680 |
-|                 |       |        |       |         |
-
 *** AIDirector Package Lines of Code Analysis /walter-client/packages/ai-director
 | Language   | files | blank | comment |  code |
 |------------+-------+-------+---------+-------|
@@ -68,7 +39,6 @@ url: [[https://file-coupling--walter-analysis.netlify.app][Code Coupling Walter]
 
 | Language   | files | blank | comment |   code |
 |------------+-------+-------+---------+--------|
-| JavaScript |   559 | 11056 |    5037 |  72464 |
 | TypeScript |   555 |  2924 |    9285 |  25955 |
 | Markdown   |    25 |  1029 |       0 |   3657 |
 | JSON       |    33 |     0 |       0 |   2612 |
@@ -77,6 +47,8 @@ url: [[https://file-coupling--walter-analysis.netlify.app][Code Coupling Walter]
 
 ** Code Hotspot Analysis (Last 6 month)
 url: [[https://hermes-aidirector-hotspots--walter-analysis.netlify.app][Hotspot Ai Director Hermes]]
-[[file:Hermes-AIDirector_Analysis/2021-07-01_09-13-05_screenshot.png]]
+
+[[file:Hermes-AIDirector_Analysis/2021-07-01_09-33-39_screenshot.png]]
+
  Hermes AI Director has fewer hotspots meaning less new code was checkedin in
 the last 6 month
