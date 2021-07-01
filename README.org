@@ -31,6 +31,422 @@ url: [[https://file-coupling--walter-analysis.netlify.app][Code Coupling Walter]
 
 [[file:AIDirector_Analysis/2021-07-01_08-19-39_screenshot.png]]
 
+** Ai Director Walter Commit History
+Total Commits: 410
+
+|   0 | Commit   |       Date | Title                                                                                                                                             |
+|   1 | e9008704 | 2021-06-29 | reset navigator in between chats                                                                                                                  |
+|   2 | c4341687 | 2021-06-29 | Fixed first chat id not scrolling first matched text into view                                                                                    |
+|   3 | b4895e91 | 2021-06-29 | Differentiate between outline and highlighting                                                                                                    |
+|   4 | ada8fedb | 2021-06-28 | Fixed scroll into view logic                                                                                                                      |
+|   5 | 267a6302 | 2021-06-28 | Removed testing div                                                                                                                               |
+|   6 | 809c9564 | 2021-06-28 | Use our own htmlwithhighlight function                                                                                                            |
+|   7 | 9f4b8d11 | 2021-06-28 | Added point to prod script domain fix for getting correct intents url                                                                             |
+|   8 | 2e8a8c59 | 2021-06-28 | Remove console log                                                                                                                                |
+|   9 | 7e5578d9 | 2021-06-28 | Remove chatid from  url too if no keyword matches are found in it                                                                                 |
+|  10 | bf339566 | 2021-06-28 | Filter out chats that are not in search results while searching                                                                                   |
+|  11 | c37b7047 | 2021-06-22 | Added go live switch toggle                                                                                                                       |
+|  12 | c699ca67 | 2021-06-22 | Added ispublished flow                                                                                                                            |
+|  13 | 4aa98674 | 2021-06-22 | wip update callflow published mutation                                                                                                            |
+|  14 | daa96c38 | 2021-06-11 | Add ability to see progress of intent example labelling (#909)                                                                                    |
+|  15 | f0fc3318 | 2021-06-10 | update UI for Agent Progression (#882)                                                                                                            |
+|  16 | 52c19fff | 2021-06-09 | Fix bug                                                                                                                                           |
+|  17 | 52b6a15b | 2021-06-09 | Added message id to intent example input                                                                                                          |
+|  18 | 92f54f98 | 2021-06-09 | Do not query for deleted intents                                                                                                                  |
+|  19 | bd2f8be1 | 2021-06-09 | Prefill first intent example in read-along widget when new behavior is selected (#903)                                                            |
+|  20 | 30a9d390 | 2021-06-08 | Added indication of being too long                                                                                                                |
+|  21 | e325a9fd | 2021-06-08 | Changed alignment of fields in fast add intent menu                                                                                               |
+|  22 | 8ddf9505 | 2021-06-08 | Added placeholder examples                                                                                                                        |
+|  23 | 92ed0e4b | 2021-06-08 | Added new guideline labels                                                                                                                        |
+|  24 | 5fa5ca28 | 2021-06-08 | remove unnecessary distinct on                                                                                                                    |
+|  25 | ad74c4c8 | 2021-06-08 | Make linter happy                                                                                                                                 |
+|  26 | e6a521b4 | 2021-06-07 | Fixed up query poll interval for active intents provider                                                                                          |
+|  27 | 9b93f156 | 2021-06-07 | Added ability to insert call flow items directly from call flow builder page                                                                      |
+|  28 | 162caaa4 | 2021-06-07 | Added titlecase and examples to active intents query                                                                                              |
+|  29 | d266d480 | 2021-06-08 | Fix icon routing                                                                                                                                  |
+|  30 | ed4387e7 | 2021-06-07 | Added indication of positive vs. negative example                                                                                                 |
+|  31 | aef0af63 | 2021-06-07 | Fixed whitescreen issue and allow multi-intent add                                                                                                |
+|  32 | d47c86e2 | 2021-06-04 | Make sure widget behavior label is titlecase                                                                                                      |
+|  33 | f85bfae8 | 2021-06-04 | switch to title case for labels                                                                                                                   |
+|  34 | b712cec7 | 2021-06-04 | add support for selection widget to vcfs + whitelist approach call flow routing (#890)                                                            |
+|  35 | f88e0e87 | 2021-06-03 | Fix permissioning flakiness for fast add intent menu (#887)                                                                                       |
+|  36 | d0f6e349 | 2021-06-03 | Allow quick creation of intents from closed conversations (#883)                                                                                  |
+|  37 | 6885fbbd | 2021-06-01 | Add V0 of visual call-flow editor (#878)                                                                                                          |
+|  38 | 22d22c84 | 2021-05-26 | Make agent team filter query more efficient (#873)                                                                                                |
+|  39 | bf107a79 | 2021-05-25 | Fix batch user profile creation script (#872)                                                                                                     |
+|  40 | b4214afd | 2021-05-25 | put back credit pros objections in agent progression (#866)                                                                                       |
+|  41 | 175d9925 | 2021-05-25 | Voi 1339 1485 add page tracking (#862)                                                                                                            |
+|  42 | ad092955 | 2021-05-21 | remove hack (#864)                                                                                                                                |
+|  43 | 318dec1b | 2021-05-21 | add handle objection behaviors (#860)                                                                                                             |
+|  44 | 181c8853 | 2021-05-14 | allow internal manager admin to create new users (#840)                                                                                           |
+|  45 | 4c9c2ffb | 2021-05-13 | Voi 1449 add date range filter (#844)                                                                                                             |
+|  46 | 02d28c36 | 2021-05-11 | Voi 1439 show number of chats hover tooltip (#786)                                                                                                |
+|  47 | 4a612279 | 2021-05-07 | Voi 1431 bring manager to moment done missed2 (#826)                                                                                              |
+|  48 | 63bfe22f | 2021-05-07 | remove a bunch (not all) of console logs in agent progression and agent interface (#825)                                                          |
+|  49 | bfb36c03 | 2021-05-07 | add export to csv (#819)                                                                                                                          |
+|  50 | 8e05b744 | 2021-05-07 | Voi 1430 add audio to agent progression chats (#804)                                                                                              |
+|  51 | 9ba37492 | 2021-05-06 | Added batch intent +example creator, call flow HTML generator, SNBR call-flow update, Homepoint call-flow (#816)                                  |
+|  52 | f354785e | 2021-05-05 | fix-intents-doctor-neg-examples (#802)                                                                                                            |
+|  53 | a0545cfa | 2021-05-04 | [VOI-1489] fix ai director not loading all calls (#811)                                                                                           |
+|  54 | 81a09fe2 | 2021-04-30 | Add behavior checkmark back (#800)                                                                                                                |
+|  55 | 4e6ac579 | 2021-04-29 | fix (#799)                                                                                                                                        |
+|  56 | f6838097 | 2021-04-28 | make numweeks constant (#795)                                                                                                                     |
+|  57 | f13e1595 | 2021-04-28 | remove-chat-platform-id-from-sql (#794)                                                                                                           |
+|  58 | 7200db2c | 2021-04-28 | fix walter-dev agent progression not working                                                                                                      |
+|  59 | ff74cea2 | 2021-04-28 | More agent progression sql fixes (#793)                                                                                                           |
+|  60 | c3814cc1 | 2021-04-28 | VOI-1433-agent progression using sql (#779)                                                                                                       |
+|  61 | 46d9c4a9 | 2021-04-28 | Fix chartio wrapper for new larger dashboard chart height (#787)                                                                                  |
+|  62 | 131e9598 | 2021-04-27 | Use dashboard slug when available (#784)                                                                                                          |
+|  63 | 3b1dd6d0 | 2021-04-26 | Added unique AP y labels (#782)                                                                                                                   |
+|  64 | 9d6e4461 | 2021-04-26 | Add Analytics Page for The Credit Pros (#778)                                                                                                     |
+|  65 | a0560d21 | 2021-04-23 | Created basic SN callflow with check-offs + script to speed up process (#771)                                                                     |
+|  66 | 847299e9 | 2021-04-22 | Use aggregrate value considering full query filters (#772)                                                                                        |
+|  67 | 3a63cb58 | 2021-04-20 | fix intents doctor api url                                                                                                                        |
+|  68 | e1536927 | 2021-04-19 | fix http vs https in url (#767)                                                                                                                   |
+|  69 | 6dbc1bc1 | 2021-04-19 | Voi 1457 edit development intents in the backend (Intent Doctor) (#760)                                                                           |
+|  70 | f5367157 | 2021-04-16 | Revert "Reduce time to render agent progression + overall memory usage (#753)"                                                                    |
+|  71 | c04d4b17 | 2021-04-14 | Reduce time to render agent progression + overall memory usage (#753)                                                                             |
+|  72 | 2c2f4fef | 2021-04-08 | change stage reached to stage                                                                                                                     |
+|  73 | a49f484c | 2021-04-08 | Separate prod vs local ts config for faster build times on deploy previews (#714)                                                                 |
+|  74 | 44ba5614 | 2021-04-08 | Make linter happy (#746)                                                                                                                          |
+|  75 | a420abdf | 2021-04-07 | fix prettier                                                                                                                                      |
+|  76 | 3c0ae5cf | 2021-04-07 | Make agent progression use web worker (#737)                                                                                                      |
+|  77 | fc92c8d1 | 2021-04-06 | Make sure chat id in URL always shows up in visible chat card list (#736)                                                                         |
+|  78 | 8094feb4 | 2021-04-05 | revoke permissions from managers (#724)                                                                                                           |
+|  79 | cf6f4e0b | 2021-04-03 | Fix credit pros agent progression bug (#730)                                                                                                      |
+|  80 | 86e94538 | 2021-04-03 | Fix agent progression speed (#727)                                                                                                                |
+|  81 | 26918fe3 | 2021-04-03 | Fix agent progression speed (#726)                                                                                                                |
+|  82 | 63b5ffce | 2021-04-02 | add manager_admin role for robin & sheneen (#723)                                                                                                  |
+|  83 | 90bf507d | 2021-04-02 | Revert "[VOI-1331] add permissions in hasura for manager_admin (#717)" (#722)                                                                      |
+|  84 | 769ebf01 | 2021-04-02 | [VOI-1331] add permissions in hasura for manager_admin (#717)                                                                                      |
+|  85 | a9869658 | 2021-04-01 | VOI-1156 Add moment filter agent progression (#683)                                                                                               |
+|  86 | 875cd1fb | 2021-04-01 | Load more button is not working on ai-director (#699)                                                                                             |
+|  87 | 014683ac | 2021-03-31 | Message transcript - Hold scroll position on scroll away from currently playing message / option to jump back to live scroll functionality (#667) |
+|  88 | b9203eba | 2021-03-31 | Added audio support for local walter-client <> walter-staging env (#715)                                                                           |
+|  89 | 0c4bb412 | 2021-03-30 | Remove redundant logout button (#700)                                                                                                             |
+|  90 | 6c92d27d | 2021-03-29 | Show chat in chatlist if ID is in the link (#675)                                                                                                 |
+|  91 | 6ccb3f51 | 2021-03-23 | bugfix ai director no longer hot reloads (#674)                                                                                                   |
+|  92 | 37da18b1 | 2021-03-19 | VOI-1328-fix-agent-progression-list (#669)                                                                                                        |
+|  93 | 6475fc82 | 2021-03-19 | Reduce library size for antd + lodash (bundle size from 6.2 -> 5.18mb) (#665)                                                                      |
+|  94 | 28df7b8d | 2021-03-19 | remove customer type filter from agent progression (#663)                                                                                         |
+|  95 | 8aad868f | 2021-03-19 | show loading symbol in conversation view (#660)                                                                                                   |
+|  96 | e131d4ca | 2021-03-18 | Allow playing message in message transcript on click message timestamp, navigate to message by clicking behavior (#655)                           |
+|  97 | d12d83f7 | 2021-03-16 | Redact numbers of 3 in a row or larger (#651)                                                                                                     |
+|  98 | 3d643e98 | 2021-03-11 | Move ai director date filters to query parameters (#618)                                                                                          |
+|  99 | 3466ad41 | 2021-03-11 | Make closed conversations page responsive + collapse side menu for agent view (#627)                                                              |
+| 100 | 2f6c6a38 | 2021-03-11 | set speed on new chatId (#629)                                                                                                                    |
+| 101 | 71ab7927 | 2021-03-04 | we don't use this (#614)                                                                                                                          |
+| 102 | 73899297 | 2021-03-04 | Voi 1226 remove check_agent_messages and check_visitor_messages from intents (#604)                                                                   |
+| 103 | ec243913 | 2021-03-04 | Fix coaching page to allow table to fit into the view + cleaned up unused tabs (product decision approved for now) (#610)                         |
+| 104 | 318f5839 | 2021-03-04 | Reduce agent app initial bundle size from 12.4 -> 4.4mb.  (#611)                                                                                   |
+| 105 | 976f3c95 | 2021-03-04 | Updated conversation view scroll behavior to allow copy + paste (#602)                                                                            |
+| 106 | a68ca610 | 2021-03-02 | Added redaction of numbers for chatlist latest message preview (#595)                                                                             |
+| 107 | 68fb8bba | 2021-03-02 | Fix broken hint bar title (#594)                                                                                                                  |
+| 108 | c0cda19f | 2021-02-26 | only show loading spinner on initial load (#583)                                                                                                  |
+| 109 | 668dd76c | 2021-02-26 | change firstProgressionDate to 2021, not 2020                                                                                                     |
+| 110 | 0466aa8c | 2021-02-25 | Use updated_at field instead of id for checking for updated messages (#567)                                                                        |
+| 111 | cabd45ef | 2021-02-25 | change agent progression date (#553)                                                                                                              |
+| 112 | f1f476aa | 2021-02-23 | hide scrubber bar and audio (#548)                                                                                                                |
+| 113 | ca4187d3 | 2021-02-22 | Fix past agent conversations chat list query. Putting agent profile id instead of user id now (#546)                                              |
+| 114 | 74a4be86 | 2021-02-22 | Fix agent filter bug (#545)                                                                                                                       |
+| 115 | 839f45d4 | 2021-02-21 | Voi 1107 agent progression dont double count (#540)                                                                                               |
+| 116 | 9ab63bb4 | 2021-02-21 | fix transcript color (#541)                                                                                                                       |
+| 117 | 8d64e007 | 2021-02-18 | Add time to complete behavior labels in call summary section (#479)                                                                               |
+| 118 | 4ccf0ba9 | 2021-02-18 | Added `updated_at` field and added sorting for name and updated_at to moments and actions page (#527)                                               |
+| 119 | e542edae | 2021-02-17 | Updating to show intent examples. (#525)                                                                                                          |
+| 120 | 1a33740b | 2021-02-17 | Snp labeling quick2 (#522)                                                                                                                        |
+| 121 | cbbb1d55 | 2021-02-17 | Makes sure that agent can see their own conversation if manager links… (#518)                                                                     |
+| 122 | dec88cee | 2021-02-16 | Added ability to search through moment examples (#512)                                                                                            |
+| 123 | 5fdc1f13 | 2021-02-16 | Added historical conversations for agents (see today's calls button) (#509)                                                                       |
+| 124 | efc579ca | 2021-02-16 | Intents Internal QA Page (#503)                                                                                                                   |
+| 125 | 408b90f1 | 2021-02-10 | Devin/voi 1000 add v0 pii redaction module for tcp silent words (#497)                                                                            |
+| 126 | 57f097d6 | 2021-02-09 | Switched from messages subscription to query + subscribeToMore subscription pattern for Agent + AI-Director (#462)                                |
+| 127 | 4c4d6f64 | 2021-02-09 | Redact suck suck and dead dead (#494)                                                                                                             |
+| 128 | 20a84175 | 2021-02-08 | maybe fix prettier?                                                                                                                               |
+| 129 | b86096aa | 2021-02-08 | Built Callflow v3 with Will (#465)                                                                                                                |
+| 130 | 33948b3c | 2021-02-08 | More strict PII redaction (#492)                                                                                                                  |
+| 131 | e9a647cd | 2021-02-08 | Added redactions for audio messages (#491)                                                                                                        |
+| 132 | 1fc503cb | 2021-02-08 | Switch intents subscription to sort by alphabetical order of name (#484)                                                                          |
+| 133 | 5115bd4a | 2021-02-08 | Separate highlighted message navigator view into separate component (#476)                                                                        |
+| 134 | 35144feb | 2021-02-08 | Added filter by name to pages page (#487)                                                                                                         |
+| 135 | f5b8d64e | 2021-02-05 | Snp fotw fixes2 (#482)                                                                                                                            |
+| 136 | fde72d86 | 2021-02-05 | Scroll active highlighted intent message into view on load (#477)                                                                                 |
+| 137 | 2890be66 | 2021-02-03 | Devin/voi 969 reduce cpu usage of the cresta app on (#456)                                                                                        |
+| 138 | b39a5d67 | 2021-02-03 | Remove scrollInterval while preserving auto scroll + highlight (#457)                                                                             |
+| 139 | 86bfc820 | 2021-02-01 | fix startTimeMs = 0 bug                                                                                                                           |
+| 140 | c062edf0 | 2021-02-01 | VOI-947 change moments sorting by name (#459)                                                                                                     |
+| 141 | bfe412a4 | 2021-01-31 | Fix hardcode for staging (#455)                                                                                                                   |
+| 142 | d1e9ddc0 | 2021-01-29 | Set up internal dashboard to visualize usage data (#438)                                                                                          |
+| 143 | 47885a4e | 2021-01-29 | Break up long tags in moments page so the examples column doesn't ruin the layout (#449)                                                          |
+| 144 | f3835ac7 | 2021-01-29 | Voi 935 fix ai director callsummary not matching agent interface (#448)                                                                           |
+| 145 | 3beb628c | 2021-01-28 | dont show dev users in chatlists (#437)                                                                                                           |
+| 146 | 63b38079 | 2021-01-26 | Voi 775 show agent progression view (#427)                                                                                                        |
+| 147 | 8e67d9c0 | 2021-01-26 | Setup tracking for voice agents (start & end call, add note, behavior widget checked off) (#423)                                                  |
+| 148 | 92453f8d | 2021-01-25 | fix bug (#428)                                                                                                                                    |
+| 149 | 4a720f40 | 2021-01-22 | Updated call summary section for purple + new play bar indicator tips (#416)                                                                      |
+| 150 | cf34de87 | 2021-01-21 | [VOI-916] upgrade sentry to 6.0.0 (#409)                                                                                                          |
+| 151 | b0da562c | 2021-01-20 | Updated styling on message transcript (#412)                                                                                                      |
+| 152 | 36540380 | 2021-01-19 | changed name to title (#407)                                                                                                                      |
+| 153 | c7ef4f77 | 2021-01-19 | Voi 546 make frontend schema more robust (#396)                                                                                                   |
+| 154 | baa088bf | 2021-01-12 | fix scroll of Call Flow container (#375)                                                                                                          |
+| 155 | 30c1e585 | 2021-01-11 | VOI-738 snp audio fixup (#361)                                                                                                                    |
+| 156 | a0d4e2a9 | 2021-01-08 | Cool analytics page hacksession (#316)                                                                                                            |
+| 157 | eee9db9e | 2021-01-06 | Updated gql query to remove live chats from closed chats list (#358)                                                                              |
+| 158 | 1b20d9c6 | 2021-01-05 | Add usedwidgets chatid widget template id unique constraint (#357)                                                                                |
+| 159 | f28401ac | 2021-01-04 | more qa fixes (#353)                                                                                                                              |
+| 160 | 8e7822f5 | 2021-01-04 | Remove source buffer related window alerts (#351)                                                                                                 |
+| 161 | cee9eeb9 | 2021-01-04 | Fixed chat count (#350)                                                                                                                           |
+| 162 | f58a5e76 | 2020-12-30 | Make 30 sec icons (#341)                                                                                                                          |
+| 163 | 69a99861 | 2020-12-30 | Make active chat more visible (#343)                                                                                                              |
+| 164 | c25dc30d | 2020-12-29 | Count conversations properly when filters are cleared (#334)                                                                                      |
+| 165 | 4f26f5a0 | 2020-12-29 | Fix highlighted search navigation (#335)                                                                                                          |
+| 166 | 1bc2c3b9 | 2020-12-28 | added active and paused indicators to intents table (#336)                                                                                        |
+| 167 | 22bda77c | 2020-12-28 | Added active status (#333)                                                                                                                        |
+| 168 | 1a61162b | 2020-12-17 | remove alert for websocket closed                                                                                                                 |
+| 169 | f26c68e0 | 2020-12-15 | VOI-739 add ping pong for fly on wall websocket (#321)                                                                                            |
+| 170 | a09d5d3f | 2020-12-15 | clean up issue with knowledge base endpoint                                                                                                       |
+| 171 | c5887edb | 2020-12-14 | pause audio on componentWillUnmount                                                                                                               |
+| 172 | 2bbf801b | 2020-12-14 | fix chat count and time filter, but might reintroduce flashing (#315)                                                                             |
+| 173 | 50660540 | 2020-12-09 | SF-943: Use common-hermes package from GitHub Package Registry (#306)                                                                             |
+| 174 | 81f0044f | 2020-12-08 | fix audio scrolling always (#312)                                                                                                                 |
+| 175 | 5e83ebc1 | 2020-12-08 | fix blue dots in seconds not milliseconds (#310)                                                                                                  |
+| 176 | 9944351d | 2020-12-08 | Voi 699 cleanup frontend fly on wall (#307)                                                                                                       |
+| 177 | cb7bfd07 | 2020-12-07 | Voi 713 clicking audio doesnt navigate (#304)                                                                                                     |
+| 178 | 0ff9ee57 | 2020-12-03 | made dots for call, hint in transcript and callflow (#305)                                                                                        |
+| 179 | 85fae388 | 2020-12-01 | check deleted is false, and make inactive upon deletion (#302)                                                                                    |
+| 180 | d7fc60bc | 2020-11-25 | Voi 655 prototype v2 notetaking (#281)                                                                                                            |
+| 181 | 04de7a6a | 2020-11-25 | remove alert for append source buffer (#298)                                                                                                      |
+| 182 | 6f53863d | 2020-11-25 | Voi 688 clickable callflow action (#294)                                                                                                          |
+| 183 | 0b656536 | 2020-11-25 | Move panel into conversation view folder (#295)                                                                                                   |
+| 184 | 3c4d8f4b | 2020-11-25 | fixed height actually (#292)                                                                                                                      |
+| 185 | be306417 | 2020-11-24 | fix live convo chat list overflowing (#291)                                                                                                       |
+| 186 | 1a09c67d | 2020-11-24 | Snp fotw new frontend (#280)                                                                                                                      |
+| 187 | b8c58675 | 2020-11-24 | Clicking on a search result does not refresh the chat list unnecessarily (#279)                                                                   |
+| 188 | e925641f | 2020-11-19 | Added primary role filter to agent and team select (#277)                                                                                         |
+| 189 | b7fbbbce | 2020-11-19 | Changed word (#275)                                                                                                                               |
+| 190 | da47ec21 | 2020-11-17 | Auto scroll to highlighted message when searching through closed conversations (#273)                                                             |
+| 191 | 3c23d22e | 2020-11-16 | Revert "Fix plurality"                                                                                                                            |
+| 192 | 61a56523 | 2020-11-16 | Fix plurality                                                                                                                                     |
+| 193 | 355a5241 | 2020-11-13 | Fix chatlist scroll + make redirect to first chat play nice with search (#268)                                                                    |
+| 194 | f00c5c94 | 2020-11-13 | Made filterbar compatible with shared fulltextsearch (#267)                                                                                       |
+| 195 | 46727d5c | 2020-11-13 | Make see in chats link work in moments page (#266)                                                                                                |
+| 196 | 57bcb021 | 2020-11-13 | Redirect to default chat if non in chatlist selected \ fix live chat card styling \ fix caching search examples (#262)                            |
+| 197 | 32e3784d | 2020-11-12 | Devin/voi 652 intent keyword search part 2 (#260)                                                                                                 |
+| 198 | 80fb49f1 | 2020-11-12 | Addressed margins + changed naming (intents -> moments) (#261)                                                                                     |
+| 199 | 4dac43a4 | 2020-11-11 | Integrated peter's combined keyword + intent search over closed conversations - now with highlights (#253)                                        |
+| 200 | 679f9f57 | 2020-11-03 | Separate closed chat filters provider from container component (#248)                                                                             |
+| 201 | 0e6cecbd | 2020-11-02 | Share more code between create and edit actions menu (#238)                                                                                       |
+| 202 | 0947204b | 2020-10-30 | Allow deleting actions with widget (#237)                                                                                                         |
+| 203 | 61a6047a | 2020-10-28 | only show if more than 1 checklist item (#225)                                                                                                    |
+| 204 | 99f6bcd0 | 2020-10-27 | Fix agent team select for action menu (#218)                                                                                                      |
+| 205 | 3aaf0377 | 2020-10-27 | fixed flashing (#219)                                                                                                                             |
+| 206 | 2772c9c7 | 2020-10-27 | Devin/voi 579 fix ability to have indefinite trigger (#214)                                                                                       |
+| 207 | 9d7fc9b6 | 2020-10-27 | Voi 552 Make timer based on started_at of chat (#209)                                                                                              |
+| 208 | ab489873 | 2020-10-27 | make more exact audio playback (#211)                                                                                                             |
+| 209 | abbae988 | 2020-10-27 | Voi 563 show hints in manager view (#204)                                                                                                         |
+| 210 | ab4cc534 | 2020-10-27 | adding trigger fails due to date range - added default date ranges (#208)                                                                         |
+| 211 | 00db2adb | 2020-10-27 | Devin/voi 551 agent team filter not populating on page (#191)                                                                                     |
+| 212 | a4ab6b33 | 2020-10-27 | Fix default date in date range picker (#200)                                                                                                      |
+| 213 | db9b8bf1 | 2020-10-27 | fix duration filter to not default to starting at 2 (#203)                                                                                        |
+| 214 | ab1876fd | 2020-10-27 | Voi 545 make hints look good (#202)                                                                                                               |
+| 215 | e3792221 | 2020-10-27 | Show widget checklist in manager view (#201)                                                                                                      |
+| 216 | a6de85ca | 2020-10-26 | Voi 371 fix checklist section (#198)                                                                                                              |
+| 217 | 288e6d86 | 2020-10-26 | remove active (#194)                                                                                                                              |
+| 218 | 33128e82 | 2020-10-26 | Remove unused field (#192)                                                                                                                        |
+| 219 | 0eadd5a5 | 2020-10-26 | Add ability to edit managers and teams on actions (Trigger) (#180)                                                                                |
+| 220 | 65e44454 | 2020-10-26 | Clear filters when creating new triggers consecutively (#179)                                                                                     |
+| 221 | 894e9c12 | 2020-10-26 | Redirect to closed instead of live conversations (#178)                                                                                           |
+| 222 | ba6fcea3 | 2020-10-23 | Changed redirect to live conversations on manager login (#168)                                                                                    |
+| 223 | 7bbc6f07 | 2020-10-23 | Removed filter in intents gql query (#171)                                                                                                        |
+| 224 | 8eaffd64 | 2020-10-23 | convert date picker & date range picker to local state (#173)                                                                                     |
+| 225 | 1b814d78 | 2020-10-22 | E2e tickets oct22 chat count (#167)                                                                                                               |
+| 226 | d15c2391 | 2020-10-22 | [VOI-485] add authentication to intents server endpoints (#163)                                                                                   |
+| 227 | 3fe11721 | 2020-10-22 | Will e2e tickets oct22 (#166)                                                                                                                     |
+| 228 | 6a331dd4 | 2020-10-21 | Devin/voi 513 editing action in actions menu is slow (#165)                                                                                       |
+| 229 | 1950fa2c | 2020-10-21 | Made intents table live and made deleting intent close drawer (#164)                                                                              |
+| 230 | 8bb2e316 | 2020-10-21 | VOI-503 Voi 474 Use widget_templates instead of both checklist_templates and hint_templates (#155)                                                   |
+| 231 | 46711890 | 2020-10-21 | Fixed triggers again (#160)                                                                                                                       |
+| 232 | b907824f | 2020-10-21 | Update DeleteIntentLink.tsx (#159)                                                                                                                |
+| 233 | d2ae9317 | 2020-10-21 | Remove intents toggle  (#150)                                                                                                                     |
+| 234 | fd919774 | 2020-10-20 | Fix intent (#151)                                                                                                                                 |
+| 235 | ab35ce2b | 2020-10-20 | Fixed foreign key issue with associating users with triggers (#148)                                                                               |
+| 236 | 04deab16 | 2020-10-20 | chats with 0 min duration -> <1 min                                                                                                                |
+| 237 | f6a576d0 | 2020-10-20 | VOI-470 Fixed intent population / incorrect checklist tag (#144)                                                                                  |
+| 238 | 54880467 | 2020-10-16 | Fix long timestamp overflow (#143)                                                                                                                |
+| 239 | 741f926e | 2020-10-16 | Enable add negative manual example (#142)                                                                                                         |
+| 240 | 7a0dcc7a | 2020-10-16 | Add span ids to manual text (#139)                                                                                                                |
+| 241 | 339bb272 | 2020-10-16 | Devin/voi 465 action items from e2e test 330pm oct 15 (#140)                                                                                      |
+| 242 | 2e33240e | 2020-10-16 | Voi 465 e2e oct 15 changes (#141)                                                                                                                 |
+| 243 | 65dfad78 | 2020-10-15 | Devin/voi 462 remove link to agent progression temporarily (#138)                                                                                 |
+| 244 | 76434295 | 2020-10-15 | Remove unused items in voice AI-Director  (#136)                                                                                                  |
+| 245 | de02880b | 2020-10-15 | Fix login / logout routing in walter client (#134)                                                                                                |
+| 246 | d463388d | 2020-10-15 | Refactor chat count component (#132)                                                                                                              |
+| 247 | 5022ed91 | 2020-10-15 | Manager can create + edit triggers (actions) in voice ai-director (#124)                                                                          |
+| 248 | 581edd28 | 2020-10-13 | Update ai director usbank (#107)                                                                                                                  |
+| 249 | 74d4781c | 2020-10-12 | [Voi-364] Add noise to audio recording (#109)                                                                                                     |
+| 250 | 72eb4cd0 | 2020-10-12 | [VOI-364] Intents audio recording (#105)                                                                                                          |
+| 251 | 039f9f7e | 2020-10-12 | [VOI-406] intents message labeling (#103)                                                                                                         |
+| 252 | bf9ba33e | 2020-10-06 | Run styling changes                                                                                                                               |
+| 253 | f56cacc9 | 2020-10-06 | Fixed header styling                                                                                                                              |
+| 254 | 624987ce | 2020-10-06 | Switched to tabs                                                                                                                                  |
+| 255 | 725707d5 | 2020-10-06 | Updated links menu                                                                                                                                |
+| 256 | ffd988b7 | 2020-10-06 | remove broken import                                                                                                                              |
+| 257 | 382dd2b1 | 2020-10-06 | Formatted files                                                                                                                                   |
+| 258 | e16206fa | 2020-10-06 | removed create menu                                                                                                                               |
+| 259 | 852bba2b | 2020-10-06 | Fixup                                                                                                                                             |
+| 260 | 99827356 | 2020-10-06 | Merge branch 'staging' into devin/voi-361-story-a-manager-user-can-define-actions                                                                 |
+| 261 | 106ca480 | 2020-10-06 | Modified triggers                                                                                                                                 |
+| 262 | aa54a228 | 2020-10-06 | Adding creation menu                                                                                                                              |
+| 263 | 13ebf024 | 2020-10-06 | Fixed styling                                                                                                                                     |
+| 264 | 067c4158 | 2020-10-06 | Added join table for triggers and teams                                                                                                           |
+| 265 | 2aeedad7 | 2020-10-06 | Updated again                                                                                                                                     |
+| 266 | b8390de0 | 2020-10-05 | Fixed migrations                                                                                                                                  |
+| 267 | ab6a7b51 | 2020-10-05 | Show chat_platform_name from original_event_data if available                                                                                         |
+| 268 | 8d3bd70c | 2020-10-05 | Add max-width to fix speaker style alignment issue.                                                                                               |
+| 269 | 65ec3bd5 | 2020-10-02 | fix intents server url                                                                                                                            |
+| 270 | edda4875 | 2020-10-02 | VOI-329: format all ts(x) and js(x) files with prettier (#97)                                                                                     |
+| 271 | c94c1d07 | 2020-10-02 | Updated table render                                                                                                                              |
+| 272 | fbd4fcdf | 2020-10-02 | WIP table                                                                                                                                         |
+| 273 | 6b276998 | 2020-10-01 | switch out ngrok URL                                                                                                                              |
+| 274 | 2781d3f1 | 2020-09-30 | Fixup stash                                                                                                                                       |
+| 275 | 366cfa54 | 2020-09-30 | Added more to actions page                                                                                                                        |
+| 276 | 84fa43a6 | 2020-09-30 | Updated actions header                                                                                                                            |
+| 277 | 27d93000 | 2020-09-30 | fix some routes                                                                                                                                   |
+| 278 | 469a9aac | 2020-09-25 | Merge pull request #77 from cresta/VOI-316-ai-agent-widget-predictions                                                                            |
+| 279 | cd73aef3 | 2020-09-25 | Merge branch 'staging' into devin/voi-220-polish-the-conversation-list-view-on                                                                    |
+| 280 | ee951b3a | 2020-09-25 | address comments                                                                                                                                  |
+| 281 | 298326f8 | 2020-09-25 | change ngrok url                                                                                                                                  |
+| 282 | 02cdd2e9 | 2020-09-24 | add deleted column to intents                                                                                                                     |
+| 283 | 0b4d4ee2 | 2020-09-24 | fix padding on live chat card                                                                                                                     |
+| 284 | 2dbb1978 | 2020-09-24 | Merge branch 'staging' into devin/voi-220-polish-the-conversation-list-view-on                                                                    |
+| 285 | 608d754f | 2020-09-24 | lint more files                                                                                                                                   |
+| 286 | 9dc7bb08 | 2020-09-24 | remove console log                                                                                                                                |
+| 287 | bd957f38 | 2020-09-24 | back to single quotes                                                                                                                             |
+| 288 | b800a160 | 2020-09-24 | Fixed more files                                                                                                                                  |
+| 289 | 1f8d855d | 2020-09-24 | update rule                                                                                                                                       |
+| 290 | 3b662656 | 2020-09-24 | install prettierrc package                                                                                                                        |
+| 291 | b8a79880 | 2020-09-23 | Voi 78 clean up past call transcripts (#56)                                                                                                       |
+| 292 | 88dd98ff | 2020-09-23 | Merge pull request #73 from cresta/change-ai-director-nav                                                                                         |
+| 293 | da663726 | 2020-09-23 | Clean up nav menu                                                                                                                                 |
+| 294 | c2ccc9be | 2020-09-23 | Rename manual triggers migrations (#72)                                                                                                           |
+| 295 | 1c3df41c | 2020-09-23 | Modify the nav menu                                                                                                                               |
+| 296 | b0d462c3 | 2020-09-23 | Migrations for triggers and intents (#60)                                                                                                         |
+| 297 | f21729c0 | 2020-09-23 | Merge branch 'staging' into devin/voi-220-polish-the-conversation-list-view-on                                                                    |
+| 298 | d95c360f | 2020-09-23 | added newline                                                                                                                                     |
+| 299 | 49e34fb1 | 2020-09-22 | Merge branch 'staging' into prettier                                                                                                              |
+| 300 | 2eeca169 | 2020-09-22 | Fixed extra divider border                                                                                                                        |
+| 301 | 6dde7f09 | 2020-09-22 | Took chatcount out of list scroll flow                                                                                                            |
+| 302 | 684e69d9 | 2020-09-22 | Fixed live conversation chatcards                                                                                                                 |
+| 303 | 9fddd024 | 2020-09-22 | Restyled live convo cards and chatcount                                                                                                           |
+| 304 | 31acad7b | 2020-09-22 | Fixed live conversations as well                                                                                                                  |
+| 305 | 337d0100 | 2020-09-22 | wrapped up styles                                                                                                                                 |
+| 306 | 8751aaa7 | 2020-09-22 | Fixed merge conflicts                                                                                                                             |
+| 307 | 4b8db0d7 | 2020-09-22 | switch to platform id                                                                                                                             |
+| 308 | ded60e34 | 2020-09-22 | Fixed visitor name query                                                                                                                          |
+| 309 | 373a4050 | 2020-09-22 | Restyled visitor info topbar                                                                                                                      |
+| 310 | fb2ccc22 | 2020-09-22 | Fixed closed conversations styles                                                                                                                 |
+| 311 | c940af3d | 2020-09-18 | remove unused legacy topbar                                                                                                                       |
+| 312 | dac9dcf8 | 2020-09-18 | Fixed checkmark sizing                                                                                                                            |
+| 313 | 8d9c4350 | 2020-09-18 | Fixed borders in collapse                                                                                                                         |
+| 314 | b26eae36 | 2020-09-18 | Added global styles                                                                                                                               |
+| 315 | a8bdf438 | 2020-09-18 | Styled chatcard                                                                                                                                   |
+| 316 | c4873da1 | 2020-09-18 | Merge pull request #42 from cresta/VOI-293-right-panel-shows-checklist                                                                            |
+| 317 | 155aff4e | 2020-09-18 | remove unused lodash import                                                                                                                       |
+| 318 | 83f007a5 | 2020-09-18 | make closed convo and liveconvo shared this NotesAndBehaviors component                                                                           |
+| 319 | 792911e2 | 2020-09-18 | code review comments                                                                                                                              |
+| 320 | 74b604ce | 2020-09-17 | Add .prettierrc to walter-client and format src/ packages                                                                                         |
+| 321 | 63e12079 | 2020-09-16 | Merge pull request #47 from cresta/devin/voi-300-closed-conversation-view-keeps-pinging                                                           |
+| 322 | f4429489 | 2020-09-16 | Merge pull request #41 from cresta/VOI-288-change-verbiage-to-conversations                                                                       |
+| 323 | cda41cd8 | 2020-09-16 | Merge branch 'staging' into devin/voi-300-closed-conversation-view-keeps-pinging                                                                  |
+| 324 | c7032b8d | 2020-09-16 | Merge branch 'staging' of github.com:cresta/walter into staging                                                                                   |
+| 325 | 99d961af | 2020-09-16 | Fixed import and typings                                                                                                                          |
+| 326 | 2778def8 | 2020-09-16 | updated for moment timezone types                                                                                                                 |
+| 327 | bfb88a31 | 2020-09-15 | added subscription to notes and agent behaviors                                                                                                   |
+| 328 | 798bae4b | 2020-09-15 | removed hardcoded date                                                                                                                            |
+| 329 | 91d5755b | 2020-09-15 | more name changes                                                                                                                                 |
+| 330 | ecd4cddf | 2020-09-15 | edited local seed script                                                                                                                          |
+| 331 | 579d258c | 2020-09-15 | Merge branch 'add-ophtha-client' into staging                                                                                                     |
+| 332 | 42f5f567 | 2020-09-15 | changed Chats to Conversations                                                                                                                    |
+| 333 | 889a19bf | 2020-09-15 | fix audio player                                                                                                                                  |
+| 334 | bee436d3 | 2020-09-14 | Add highlighting of messages                                                                                                                      |
+| 335 | a3c07b1a | 2020-09-14 | More hacky fixes                                                                                                                                  |
+| 336 | e532edc4 | 2020-09-14 | Remove constraints                                                                                                                                |
+| 337 | 83fba115 | 2020-09-14 | Hacky way to fix the date range bug                                                                                                               |
+| 338 | 3a081fb2 | 2020-09-14 | Fix duplicate key error                                                                                                                           |
+| 339 | 185669d5 | 2020-09-14 | Merge branch 'add-ophtha-client' into staging                                                                                                     |
+| 340 | ac987368 | 2020-09-14 | Change API to ngrok                                                                                                                               |
+| 341 | 4c7c6c55 | 2020-09-14 | Merge branch 'staging' of github.com:cresta/walter into staging                                                                                   |
+| 342 | 5d29322d | 2020-09-14 | Check checkflow null                                                                                                                              |
+| 343 | 952c3b4a | 2020-09-14 | Keywords -> name in triggers                                                                                                                       |
+| 344 | 3e8dec5e | 2020-09-14 | Fix url param bug                                                                                                                                 |
+| 345 | 88d371ed | 2020-09-14 | Make intent selection clearable                                                                                                                   |
+| 346 | 7a6162d3 | 2020-09-13 | Merge branch 'add-ophtha-client' into staging                                                                                                     |
+| 347 | a4e5d89c | 2020-09-13 | Add editing intent support                                                                                                                        |
+| 348 | 711fb19f | 2020-09-13 | Added ability to delete Intents (but requires a database migration first)                                                                         |
+| 349 | 30ae8dd5 | 2020-09-13 | Now use labeled examples as part of the API call                                                                                                  |
+| 350 | baa7f3f3 | 2020-09-13 | Add intent for the chat query from the trigger                                                                                                    |
+| 351 | 64b2bf33 | 2020-09-13 | Change active intents to a subscription                                                                                                           |
+| 352 | 83c83e89 | 2020-09-13 | Merge branch 'add-ophtha-client' into staging                                                                                                     |
+| 353 | bb482b8f | 2020-09-13 | Editing triggers work now                                                                                                                         |
+| 354 | 7f1606e3 | 2020-09-13 | Add intent to Trigger Creation Page                                                                                                               |
+| 355 | bd16a5e7 | 2020-09-11 | Use speaker in original event data if available                                                                                                   |
+| 356 | 5ed25b30 | 2020-09-11 | Remove unused code in MessageTranscript                                                                                                           |
+| 357 | 490918b9 | 2020-09-11 | Put latest live chat at the top                                                                                                                   |
+| 358 | 91ddb33b | 2020-09-11 | Fix broken paths                                                                                                                                  |
+| 359 | 054daf5c | 2020-09-13 | Fix build errors for ai director dependencies                                                                                                     |
+| 360 | 7d4ace89 | 2020-09-12 | Add yarn.lock so netlify will run yarn                                                                                                            |
+| 361 | bc0b1365 | 2020-09-11 | Fix audio player style                                                                                                                            |
+| 362 | 8794dcf0 | 2020-09-11 | Add style to AudioTranscript                                                                                                                      |
+| 363 | 5614a84d | 2020-09-11 | Sync h5-audio-play to the playingAudio state                                                                                                      |
+| 364 | 0af254ed | 2020-09-11 | Update audio link on every new message in live chat                                                                                               |
+| 365 | 1563b6c9 | 2020-09-12 | Return the intent name through for the Triggers page                                                                                              |
+| 366 | 1e42bb6e | 2020-09-12 | Working version of Trigger page                                                                                                                   |
+| 367 | 4d63f01f | 2020-09-11 | Fix audio player style                                                                                                                            |
+| 368 | 037c8cc8 | 2020-09-11 | Merge branch 'add-ophtha-client' of github.com:cresta/walter into add-ophtha-client                                                               |
+| 369 | 2b69a4a3 | 2020-09-11 | Add style to AudioTranscript                                                                                                                      |
+| 370 | 6fe3bb87 | 2020-09-11 | Sync h5-audio-play to the playingAudio state                                                                                                      |
+| 371 | 3295fa60 | 2020-09-11 | Update audio link on every new message in live chat                                                                                               |
+| 372 | b5e5914e | 2020-09-11 | Merge branch 'add-ophtha-client' of github.com:cresta/walter into add-ophtha-client                                                               |
+| 373 | 7c3c2afe | 2020-09-11 | Add the basic AI code                                                                                                                             |
+| 374 | 3b6d3375 | 2020-09-12 | Link from table to intent filter                                                                                                                  |
+| 375 | 80dc96de | 2020-09-12 | Merge branch 'add-ophtha-client' of github.com:cresta/walter into add-ophtha-client                                                               |
+| 376 | 49c3a361 | 2020-09-12 | Fix search                                                                                                                                        |
+| 377 | 9df18838 | 2020-09-11 | Use speaker in original event data if available                                                                                                   |
+| 378 | 2d93bd11 | 2020-09-11 | Remove unused code in MessageTranscript                                                                                                           |
+| 379 | c0c68522 | 2020-09-11 | Merge branch 'add-ophtha-client' of github.com:cresta/walter into add-ophtha-client                                                               |
+| 380 | cc68cd1c | 2020-09-11 | Put latest live chat at the top                                                                                                                   |
+| 381 | 8f94ffa2 | 2020-09-12 | Add intent selection box                                                                                                                          |
+| 382 | 66c2720a | 2020-09-12 | Merge branch 'add-ophtha-client' of github.com:cresta/walter into add-ophtha-client                                                               |
+| 383 | 2302f46b | 2020-09-12 | Fix seed script                                                                                                                                   |
+| 384 | 081654e3 | 2020-09-11 | Fix broken paths                                                                                                                                  |
+| 385 | 1d4e7222 | 2020-09-11 | Destroy drawer on close                                                                                                                           |
+| 386 | 2e4d3b4a | 2020-09-11 | Spacing                                                                                                                                           |
+| 387 | e91077e6 | 2020-09-11 | Bring drawer in line with Amy's design                                                                                                            |
+| 388 | da6271b4 | 2020-09-11 | Integrate with database and make everything editable.                                                                                             |
+| 389 | b4cb553e | 2020-09-10 | Tried to clear state                                                                                                                              |
+| 390 | 17fa2b21 | 2020-09-10 | First working dummy version                                                                                                                       |
+| 391 | c89fc1ae | 2020-09-10 | Narrowed it a bit and also rename                                                                                                                 |
+| 392 | 1f989aa0 | 2020-09-10 | Use the View.tsx Container.tsx pattern                                                                                                            |
+| 393 | ba1883ca | 2020-09-10 | Minor                                                                                                                                             |
+| 394 | 834a8531 | 2020-09-10 | Tweak                                                                                                                                             |
+| 395 | f8487220 | 2020-09-10 | Added onCancel                                                                                                                                    |
+| 396 | 71e66365 | 2020-09-10 | Some minor formatting                                                                                                                             |
+| 397 | e8c44265 | 2020-09-10 | Add a dummy table                                                                                                                                 |
+| 398 | f74263d7 | 2020-09-10 | Add the "Add New" button to the header                                                                                                            |
+| 399 | 4fc54233 | 2020-09-10 | Fix path                                                                                                                                          |
+| 400 | cce3df59 | 2020-09-10 | Rename to intent                                                                                                                                  |
+| 401 | f5638da6 | 2020-09-11 | Add triggers view                                                                                                                                 |
+| 402 | d886e5b5 | 2020-09-10 | Add missing jsons due to gitignore                                                                                                                |
+| 403 | 03725ce9 | 2020-09-10 | Use the auth from common hermes                                                                                                                   |
+| 404 | 18f28399 | 2020-09-10 | compile assets in ai director                                                                                                                     |
+| 405 | 2c8ed4da | 2020-09-09 | Remove logout url by role                                                                                                                         |
+| 406 | a4ef2195 | 2020-09-09 | Add svg import declaration for ai-director                                                                                                        |
+| 407 | 0097194b | 2020-09-09 | Resolve missing dependencies in common packages                                                                                                   |
+| 408 | 788843f0 | 2020-09-09 | Create a dedicated Route page                                                                                                                     |
+| 409 | b2499cd3 | 2020-09-10 | Add AIDirector page                                                                                                                               |
+| 410 | 4c1212c4 | 2020-09-09 | Move ai director and packages to walter client                                                                                                    |
+#+TBLFM: $1=@#-1
+
 * Hermes-AIDirector Analysis
 ** Lines of Code Analysis
     1687 text files.
@@ -52,3 +468,48 @@ url: [[https://hermes-aidirector-hotspots--walter-analysis.netlify.app][Hotspot 
 
  Hermes AI Director has fewer hotspots meaning less new code was checkedin in
 the last 6 month
+
+** Commit history since the creation of AI Director  Walter
+Total: 39 Commits
+
+|  0 | Commit    |       Date | Title                                                                                 |
+|----+-----------+------------+---------------------------------------------------------------------------------------|
+|  1 | ec09222ae | 2021-06-21 | SF-1895: refactor to reduce uicommon dependencies (#2360)                             |
+|  2 | 77335e5c9 | 2021-06-17 | Update config customer fetch (#2357)                                                  |
+|  3 | 86f08472a | 2021-06-10 | create addOneDayToEndDate prop to DateRangeProvider (#2339)                           |
+|  4 | e2c33fc07 | 2021-06-08 | Santi/cc 31 dynamic selection of dashboard depending (#2327)                          |
+|  5 | 20ff42e51 | 2021-06-06 | SCA-1968: Updating Focus Areas view for managers (#2322)                              |
+|  6 | fcd9188ea | 2021-06-07 | SF-1855 move more items to gitdb (#2313)                                              |
+|  7 | d832b26d4 | 2021-06-02 | SCA-1968: focus areas (#2319)                                                         |
+|  8 | 4412d1642 | 2021-06-02 | Revert "SCA-1949: New Focus Areas Interface (#2222)" (#2315)                          |
+|  9 | 6388b9609 | 2021-06-02 | SCA-1949: New Focus Areas Interface (#2222)                                           |
+| 10 | 75c836f7d | 2021-06-02 | SF-1855 move CUSTOMER_METADATA to gitdb (#2302)                                        |
+| 11 | 3d650048d | 2021-06-01 | add logic to determine instant_send table depending on customer (#2308)                |
+| 12 | 1544c400d | 2021-05-25 | CC-10 Santi/cc 10 embed chartio dashboards into chat ai (#2231)                       |
+| 13 | 157fa4ef7 | 2021-05-21 | Updated live & closed chat counts to use pg views (#2249)                             |
+| 14 | 184fe8de8 | 2021-05-20 | Optimize last message meta handling (#2261)                                           |
+| 15 | f3c0f3773 | 2021-05-17 | Disable chat event enricher for intuit-cs [gated flag] (#2246)                        |
+| 16 | 1763a00a6 | 2021-05-17 | Gate live alerts component behind feature flag (#2245)                                |
+| 17 | 72dcc5403 | 2021-05-17 | Add feature flag for live chat count query components (#2243)                         |
+| 18 | 0acde7116 | 2021-04-23 | add limit (#2139)                                                                     |
+| 19 | bf67818ff | 2021-04-21 | SF-1748 fix distinct_on (#2147)                                                        |
+| 20 | 1e409ace6 | 2021-04-21 | fix manager queries too (#2145)                                                       |
+| 21 | d05e95157 | 2021-04-07 | AI Director - Suggestions Director Interface (#1988)                                  |
+| 22 | 566530d7a | 2021-04-02 | BEH-1676 Automatic Hourly Agent Progression (#2016)                                   |
+| 23 | 65b4e4af8 | 2021-03-10 | SF-1238 chartio embedding update (#2014)                                              |
+| 24 | 4419a4640 | 2021-01-17 | Bump @types/react from 16.9.55 to 17.0.0 (#1764)                                      |
+| 25 | 1f98cb8fb | 2021-01-15 | Bump react from 16.13.0 to 16.14.0 (#1763)                                            |
+| 26 | 16ae9fc03 | 2021-01-12 | hardedcoded year 2020 for querying agent progression week (#1812)                     |
+| 27 | 35e3d392e | 2020-12-04 | SF-943: apply common-hermes changes from `walter` (#1693)                             |
+| 28 | eede89c67 | 2020-11-30 | Bump @types/enzyme from 3.10.5 to 3.10.8 (#1636)                                      |
+| 29 | 27fc794a5 | 2020-11-19 | BEH-1052: allowing hint scoring was_receptive to be null (#1611)                       |
+| 30 | 96f2c3397 | 2020-11-18 | SUG-589: Remove duplicate suggestions if they are present in hint suggestions (#1614) |
+| 31 | 5db249851 | 2020-11-02 | Bump @types/react from 16.9.51 to 16.9.55 (#1556)                                     |
+| 32 | 9289b6b8b | 2020-10-25 | Bump moment from 2.27.0 to 2.29.1 (#1521)                                             |
+| 33 | 21064b76c | 2020-10-22 | SF-226: remove dependency on liveperson-api - Part A (#1517)                          |
+| 34 | 3e1e1ccba | 2020-10-09 | Bump @types/react from 16.9.50 to 16.9.51 (#1475)                                     |
+| 35 | 9f685a8a3 | 2020-10-02 | Bump @types/react from 16.9.46 to 16.9.50 (#1462)                                     |
+| 36 | cd22b38a2 | 2020-09-23 | INF-310: update GQL queries to use citext type when applicable (#1422)                |
+| 37 | 748afed51 | 2020-09-14 | Fixed no null return issue (#1397)                                                    |
+| 38 | b28664804 | 2020-09-14 | BEH-842: Only show behaviors in agent progression that were marked for AP (#1392)     |
+#+TBLFM: $1=@#-1
