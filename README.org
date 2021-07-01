@@ -52,11 +52,11 @@
 | SUM:                        |   222 |   562 |     104 | 6958 |
 
 ** Code Hotspot Analysis (Actively changing code during last 6 month is in red)
-url: https://hotspots--walter-analysis.netlify.app
+[[https://hotspots--walter-analysis.netlify.app][Hotspot AIDirector Walter]]
 [[file:AIDirector_Analysis/2021-07-01_07-49-15_screenshot.png]]
 
 ** Code Coupling Analysis
-url: https://file-coupling--walter-analysis.netlify.app
+url: [[https://file-coupling--walter-analysis.netlify.app][Code Coupling Walter]]
 
 [[file:AIDirector_Analysis/2021-07-01_08-19-39_screenshot.png]]
 
@@ -76,9 +76,7 @@ url: https://file-coupling--walter-analysis.netlify.app
 | SUM:       |  1172 | 15009 |   14322 | 104688 |
 
 ** Code Hotspot Analysis (Last 6 month)
-url: https://hermes-aidirector-hotspots--walter-analysis.netlify.app
+url: [[https://hermes-aidirector-hotspots--walter-analysis.netlify.app][Hotspot Ai Director Hermes]]
 [[file:Hermes-AIDirector_Analysis/2021-07-01_09-13-05_screenshot.png]]
  Hermes AI Director has fewer hotspots meaning less new code was checkedin in
 the last 6 month
-
-** Code Coupling Analysis
